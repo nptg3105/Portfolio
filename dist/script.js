@@ -1,0 +1,2 @@
+"use strict";var navIcon=$(".nav__icon"),nav=$(".nav"),close=$(".close"),menuItem=$(".nav .menu-item"),bgHeader=$(".header");$(document).ready((function(){navIcon.click((function(e){e.preventDefault(),nav.addClass("active"),$("body").toggleClass("has-scroll"),bgHeader.addClass("active")})),close.click((function(e){e.preventDefault(),nav.removeClass("active"),$("body").toggleClass("has-scroll")})),menuItem.click((function(e){nav.removeClass("active"),$("body").toggleClass("has-scroll")}))}));
+//# sourceMappingURL=script.js.map

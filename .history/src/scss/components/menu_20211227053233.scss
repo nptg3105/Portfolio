@@ -1,0 +1,13 @@
+@use '../globals';
+@use '../utilities';
+
+menu {
+    &-list {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}

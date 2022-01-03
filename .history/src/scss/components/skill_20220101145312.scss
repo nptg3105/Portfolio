@@ -1,0 +1,56 @@
+@use '../globals'as *;
+@use '../utilities'as *;
+
+.skill {
+    padding-bottom: 40px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.5)), url("/images/lap.jpg") no-repeat center fixed;
+    background-size: cover;
+    color: var(--color-white);
+
+    &__heading {
+        text-align: center;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        text-align: center;
+        margin-top: 40px;
+        gap: 80px;
+    }
+
+    &__item {
+        background-color: transparent;
+
+        padding: 50px;
+        border-radius: 15px;
+        box-shadow: 0px 5px 12px #eee;
+
+        img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+        }
+
+    }
+
+    p {
+        margin: 8px 0;
+    }
+
+    .resume__btn {
+        max-width: max-content;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: $xs-min) {
+    .skill {
+        &__content {
+            gap: rem(50);
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}

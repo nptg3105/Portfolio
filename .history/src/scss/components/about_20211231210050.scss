@@ -1,0 +1,55 @@
+@use '../globals'as *;
+@use '../utilities'as *;
+
+.about {
+
+    color: var(--color-black);
+    background-color: var(--bg-grey);
+
+    &__heading {
+        text-align: center;
+        margin-bottom: rem(40);
+    }
+
+    &__title {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        h2 {
+            padding: 16px 0;
+            font-weight: 500;
+
+        }
+
+        h3 {
+            padding: 12px 0;
+            color: var(--color-primary);
+        }
+
+        p {
+            padding-bottom: 10px;
+            color: var(--color-secondary);
+        }
+
+    }
+
+    &__intro {
+        display: flex;
+        flex-direction: column;
+        padding-right: rem(40);
+    }
+
+    &__image {
+        img {
+            width: 80%;
+            height: 80%;
+            object-fit: cover;
+        }
+    }
+}

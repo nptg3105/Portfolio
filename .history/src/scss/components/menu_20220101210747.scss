@@ -1,0 +1,56 @@
+@use '../globals'as *;
+@use '../utilities'as *;
+
+.menu {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.712);
+    z-index: 10;
+    height: 80px;
+
+    .container-fluid {
+        height: 100%;
+    }
+
+    .logo {
+        img {
+
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // padding-top: 20px;
+    }
+
+    a {
+        color: white;
+
+    }
+
+    &-list {
+        ul {
+            display: flex;
+        }
+    }
+
+    &-item {
+        padding: rem(16) rem(20);
+        margin-left: 16px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        font-weight: bold;
+        background: linear-gradient(to left, transparent 50%, var(--color-primary) 50%) right;
+        background-size: 350%;
+        transition: .6s ease-out;
+
+        &:hover {
+            background-position: left;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@use '../globals'as *;
+@use '../utilities'as *;
+
+.header {
+    height: 100vh;
+    background: url("https://i.gifer.com/IrM.gif") no-repeat center center fixed;
+    background-size: cover;
+    // z-index: -1;
+
+    position: relative;
+
+    &__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: var(--color-secondary);
+
+    }
+
+    &__name {
+        span {
+            color: #009DAE;
+        }
+
+        font-size: rem(50);
+    }
+
+    &__desc {
+        font-size: rem(35);
+    }
+}

@@ -1,0 +1,29 @@
+.contact {
+    background-color: var(--color-secondary);
+    clip-path: polygon(50% 10%, 100% 0%, 100% 100%, 0 100%, 0 0);
+
+    &__heading {
+        text-align: center;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+        padding: 100px 40px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 5px 12px #eee;
+
+    }
+
+    &__btn {
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        background-color: var(--color-secondary);
+    }
+}

@@ -1,0 +1,43 @@
+@use '../globals'as *;
+@use '../utilities'as *;
+
+.menu {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        img {
+
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    a {
+        color: white;
+
+    }
+
+    &-list {
+        // display: flex;
+    }
+
+    &-item {
+        padding: rem(16) rem(10);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        font-weight: bold;
+        background: linear-gradient(to left, transparent 50%, var(--color-primary) 50%) right;
+        background-size: 350%;
+        transition: .6s ease-out;
+
+        &:hover {
+            background-position: left;
+        }
+    }
+}

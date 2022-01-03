@@ -1,0 +1,73 @@
+@use '../globals';
+@use '../utilities';
+
+.btn-main {
+    color: var(--color-white);
+    margin: 0 auto;
+    border: 1px solid transparent;
+    padding: 18px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: max-content;
+    margin-top: 16px;
+    background: linear-gradient(to left, var(--color-primary) 50%, transparent 50%) right;
+    background-size: 200%;
+    transition: all .4s ease-out;
+
+    &:hover {
+        background-position: left;
+        border: 1px solid var(--color-primary);
+        color: var(--color-primary);
+    }
+
+}
+
+.resume__btn {
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    padding: 18px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: linear-gradient(to left, transparent 50%, var(--color-primary) 50%) right;
+    background-size: 200%;
+    transition: .4s ease-out;
+
+    &:hover {
+        background-position: left;
+        color: var(--color-white);
+
+    }
+}
+
+.btn-project {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 25%;
+        display: block;
+        background-color: var(--color-primary);
+        bottom: 0;
+        left: 0;
+    }
+
+    img {
+        width: 20px;
+        height: 20px;
+        margin-left: 8px;
+        transition: all 0.2s ease;
+    }
+
+    &:hover img {
+        transform: rotate(45deg);
+        transform: translateX(5px);
+    }
+
+}

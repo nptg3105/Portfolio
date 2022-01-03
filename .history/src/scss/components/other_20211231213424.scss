@@ -1,0 +1,43 @@
+@use '../globals';
+@use '../utilities';
+
+.btn-main {
+    background-color: transparent;
+    padding: 8px 20px;
+    border: 1px solid white;
+    display: inline-block;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 16px;
+
+    &:hover {
+        background-color: #009DAE;
+        color: white;
+
+    }
+}
+
+.contact__btn {
+    a {
+        color: black;
+
+    }
+
+    background-color: var(--color-secondary);
+    padding: 20px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.resume__btn {
+    a {
+        color: black;
+
+    }
+
+    background-color: var(--color-secondary);
+    padding: 20px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+}

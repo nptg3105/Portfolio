@@ -1,0 +1,10 @@
+@use '../globals';
+@use '../utilities';
+
+.btn-main {
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 1px solid white;
+    display: inline-block;
+    border-radius: 20px;
+}

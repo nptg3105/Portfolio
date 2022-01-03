@@ -1,0 +1,37 @@
+@use '../globals'as *;
+@use '../utilities'as *;
+
+.footer {
+    padding: 20px 0;
+    background-color: var(--color-secondary);
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+    }
+
+    .social-media {
+        &__item {
+            padding: 8px;
+        }
+
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: $xxs-min) {
+    .footer {
+        &__content {
+
+            flex-direction: column;
+        }
+    }
+}

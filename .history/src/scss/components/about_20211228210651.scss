@@ -1,0 +1,17 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__intro {
+        margin-left: rem(20);
+    }
+
+    &__image {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

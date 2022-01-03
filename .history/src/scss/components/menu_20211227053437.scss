@@ -1,0 +1,18 @@
+@use '../globals';
+@use '../utilities';
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    // z-index: 10;
+
+    &-list {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-around;
+
+    }
+}

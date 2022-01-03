@@ -1,0 +1,12 @@
+.experience {
+    &__heading {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+    }
+}

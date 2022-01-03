@@ -1,0 +1,20 @@
+.about {
+    &__heading {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__image {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
